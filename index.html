@@ -10,25 +10,48 @@
 	<title>Main Page</title>
 </head>
 <body>
-    <div class="jumbotron jumbotron-fluid" align="center">
-        <h1 style="color: DarkBlue">GET SWOLE</h1>
-    	<div class="container">
-            <div class="row">
-        	   <div class="col-md-12"> 
-        		  <select class="div-toggle" data-target=".my-info-1">
-        		      <option value="chest" data-show=".citrus">Chest</option>
-        		      <option value="back" data-show=".citrus">Back</option>
-        		      <option value="legs" data-show=".pome">Legs</option>
-        		      <option value="core" data-show=".pome">Core</option>
-        		      <option value="arms" data-show=".pome">Arms</option>
-        		  </select>
+    <div class="jumbotron jumbotron-fluid">
+        <nav class="navbar navbar-default navbar-fixed-top nav-style">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 no-padding">
+                        <div class="navbar-header teal-back side-padding">
+                            <h1 class="h1font">GET SWOLE</h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                            <li><a id="border" href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-    	</div>
+            </div>  
+        </nav>
     </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <select class="div-toggle" data-target=".my-info-1">
+                  <option value="chest" data-show=".citrus">Chest</option>
+                  <option value="back" data-show=".citrus">Back</option>
+                  <option value="legs" data-show=".pome">Legs</option>
+                  <option value="core" data-show=".pome">Core</option>
+                  <option value="arms" data-show=".pome">Arms</option>
+                </select>
+            </div>
+            <div class="col-md-2 sample1"></div>
+            <div class="col-md-2 sample2"></div>
+            <div class="col-md-2 sample3"></div>
+            <div class="col-md-2 sample4"></div>
+            <div class="col-md-2 sample5"></div>
+        </div>
+    </div>
+    <hr>
 	<div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-10">
             	<table id="example" class="display" cellspacing="0" width="100%">
                     <thead>
                         <tr>
@@ -42,45 +65,43 @@
                     
                     <tbody>
                         <tr>
-                            <td><input type="text" name="exercise-name-1"></td>
-                            <td><input type="integer" id="row-1-weight" name="row-1-weight" value=""></td>
-                            <td><input type="integer" id="row-1-set1" name="row-1-set1" value="Do work"></td>
-                            <td><input type="integer" id="row-1-set2" name="row-1-set2" value="Excercise"></td>
-                            <td><input type="integer" id="row-1-set3" name="row-1-set3" value="Sweat"></td>
-                        </tr>
-                        <br>
-                        <tr>
-                            <td><input type="text" name="exercise-name-2"></td>
-                            <td><input type="integer" id="row-2-weight" name="row-2-weight" value=""></td>
-                            <td><input type="integer" id="row-2-set1" name="row-2-set1" value="Do work"></td>
-                            <td><input type="integer" id="row-2-set2" name="row-2-set2" value="Excercise"></td>
-                            <td><input type="integer" id="row-2-set3" name="row-2-set3" value="Sweat"></td>
-                        </tr>
-                        <tr>
-                            <td><input type="text" name="name"></td>
-                            <td><input type="integer" id="row-3-weight" name="row-3-weight" value=""></td>
-                            <td><input type="integer" id="row-3-set1" name="row-3-set1" value="Do work"></td>
-                            <td><input type="integer" id="row-3-set2" name="row-3-set2" value="Excercise"></td>
-                            <td><input type="integer" id="row-3-set3" name="row-3-set3" value="Sweat"></td>
-                        </tr>
-                        <tr>
-                            <td><input type="text" name="name"></td>
-                            <td><input type="integer" id="row-4-weight" name="row-4-weight" value=""></td>
-                            <td><input type="integer" id="row-4-set1" name="row-4-set1" value="Do work"></td>
-                            <td><input type="integer" id="row-4-set2" name="row-4-set2" value="Excercise"></td>
-                            <td><input type="integer" id="row-4-set3" name="row-4-set3" value="Sweat"></td>
-                        </tr>
-                        <tr>
-                            <td><input type="text" name="name"></td>
-                            <td><input type="integer" id="row-5-weight" name="row-5-weight" value=""></td>
-                            <td><input type="integer" id="row-5-set1" name="row-5-set1" value="Do work"></td>
-                            <td><input type="integer" id="row-5-set2" name="row-5-set2" value="Excercise"></td>
-                            <td><input type="integer" id="row-5-set3" name="row-5-set3" value="Sweat"></td>
+                            <td><input type="text" name="exercise-name"></td>
+                            <td><input type="integer" id="row-weight" name="row-weight" value=""></td>
+                            <td><input type="integer" id="row-set1" name="row-set1" value="Do work"></td>
+                            <td><input type="integer" id="row-set2" name="row-set2" value="Excercise"></td>
+                            <td><input type="integer" id="row-set3" name="row-set3" value="Sweat"></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span> Submit</button>
+            </div>
         </div>
     </div>
+    <hr>
+    <div class="container-fluid">
+        <h1>Exercises done so far:</h1>
+            <div class="col-md-12 results-area">
+                
+            </div>
+    </div>
+    <!-- Modal HTML Start-->
+    <div class="workout"> 
+        <div id="workOutModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> <STRONG>X</STRONG>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <iframe id="workOuttrailer" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- Modal HTML Start End -->
 </body>
 </html>
