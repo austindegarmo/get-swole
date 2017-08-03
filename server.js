@@ -2,7 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
-var Chart = require('chart,js');
+var Chart = require('chart.js');
 
 // Sets up the Express App
 // =============================================================

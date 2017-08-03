@@ -1,32 +1,32 @@
-var db = require("..models");
+var db = require("../models");
 
 module.exports = function(app) {
 
-	app.get(".my-info-1", function(req, res) {
-		db."tablename".findAll({}).then(function(dbUser) {
+// 	app.get(".my-info-1", function(req, res) {
+// 		db."tablename".findAll({}).then(function(dbUser) {
 
-			res.json(dbdatabasename);
-		});
-	});
+// 			res.json(dbdatabasename);
+// 		});
+// 	});
 
-app.post("/api/workoutname", function(req, res) {
+// app.post("/api/workoutname", function(req, res) {
 
-	db."databasename".create({
+// 	db."databasename".create({
 
-		text: req.body."tabledata"
-		type: req.body."tabledata"
-	}).then(function(db"dbname") {
+// 		text: req.body."tabledata"
+// 		type: req.body."tabledata"
+// 	}).then(function(db"dbname") {
 
-		res.json(db"dbname");
-	});
+// 		res.json(db"dbname");
+// 	});
 
 	
-});
+// });
 
-app.put("/api/workoutname", function(req, res) {
+// app.put("/api/workoutname", function(req, res) {
 
 
-})
+// })
 
 
 
