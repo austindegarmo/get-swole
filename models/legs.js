@@ -1,6 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
   var legsExercise = sequelize.define("legs_exercise", {
-    title: {
     exercise_name: {
       type: DataTypes.STRING,
       allowNull: false,

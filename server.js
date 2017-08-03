@@ -2,7 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
-var Chart = require('chart,js');
+var Chart = require('chart.js');
 
 // Sets up the Express App
 // =============================================================
@@ -27,7 +27,7 @@ app.use(passport.session());
 
 // Routes
 // =============================================================
-require("./routes/api-routes.js")(app);
+// require("./routes/api-routes.js")(app);
 require("./routes/html-routes.js")(app);
 
 // Syncing our sequelize models and then starting our Express app
