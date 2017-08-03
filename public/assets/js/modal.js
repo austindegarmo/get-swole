@@ -7,17 +7,27 @@ var exerciseTrailer = {
 	"legs": ["https://www.youtube.com/embed/Dy28eq2PjcM","https://www.youtube.com/embed/1Tq3QdYUuHs","https://www.youtube.com/embed/-M4-G8p8fmc","https://www.youtube.com/embed/DGavj41F_Cs","https://www.youtube.com/embed/hxldG9FX4j4"]
 }
 
+var exerciseName = {
+	"arms": ["hammer curl","reverse cure","tricep dumbbell extensions","tricep kick backs","dumbbell shoulder press"],
+	"back": ["lat pulldown","bent over row","seated cable row","lower back", "dumbbell row"],
+	"chest": ["bench press","dumbbell bench press","incline bench press","incline dumbbell bench press","dumbbell flys on a flat bench"],
+	"core": ["leg raises","v-ups","russian twist","mountain climber","planks"],
+	"legs": ["squat","leg curl","calf raises","dumbbell single leg deadlift","box jump"]
+}
+
 function drawButton(exType) {
 	$("#sample").empty();
 	var trailers = exerciseTrailer[exType];
+	var exercises = exerciseName[exType]
 	console.log(trailers);
+
 	for (var i = 0; i < trailers.length; i++) {
-	    var button = $('<button>');
-	    button.addClass('col-md-2 btn btn-primary btn-lg');
-	    button.attr('id','custom-modal' + i);
-	    button.attr('data-topic', trailers[i]);
-	    button.text(exType);
-	    $('#sample').append(button);
+			var button = $('<button>');
+			    button.addClass('col-md-2 btn btn-primary btn-lg');
+			    button.attr('id','custom-modal' + i);
+			    button.attr('data-topic', trailers[i]);
+			    button.text(exercises[i]);
+			    $('#sample').append(button);
 	}
 };
 
@@ -64,16 +74,18 @@ $(document).ready(function(){
 	// 	case "legs":
 	// 	drawButton("legs");
 	// 	break;
-
-		if ($("#dropdown").val()==="arms") {
+	$("#dropdown").on('change', function() {
+	  if (this.value==="arms") {
 			drawButton("arms");
-		} else if ($("#dropdown").val()==="back") {
+		} else if (this.value==="back") {
 			drawButton("back");
-		} else if ($("#dropdown").val()==="chest") {
+		} else if (this.value==="chest") {
 			drawButton("chest");
-		} else if ($("#dropdown").val()==="core") {
+		} else if (this.value==="core") {
 			drawButton("core");
-		} else if ($("#dropdown").val()==="legs") {
+		} else if (this.value==="legs") {
 			drawButton("legs");
 		}
+
+	})
 	});
