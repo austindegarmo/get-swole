@@ -11,7 +11,7 @@ module.exports = function(app) {
 
 app.post("/api/workoutname", function(req, res) {
 
-	db."databasename".create({
+	db.userData.create({
 
 		text: req.body."tabledata"
 		type: req.body."tabledata"
@@ -28,7 +28,7 @@ app.put("/api/workoutname", function(req, res) {
 
 })
 
-
+app.post("/login", )
 
 
 
