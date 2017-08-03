@@ -57,23 +57,7 @@ $("#workOutModal").on('hide.bs.modal', function(){
 $(document).ready(function(){
 	var test = $("#dropdown").find("option:selected").prop("value");
 	console.log(test);
-	// switch ("arms"){
-	// 	case "arms":
-	// 	drawButton("arms");
-	// 	console.log(test);
-	// 	break;
-	// 	case "back":
-	// 	drawButton("back");
-	// 	break;
-	// 	case "chest":
-	// 	drawButton("chest");
-	// 	break;
-	// 	case "core":
-	// 	drawButton("core");
-	// 	break;
-	// 	case "legs":
-	// 	drawButton("legs");
-	// 	break;
+	
 	$("#dropdown").on('change', function() {
 	  if (this.value==="arms") {
 			drawButton("arms");
