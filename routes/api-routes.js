@@ -32,6 +32,10 @@ app.post("/login", )
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2d9cd2ad27eb61e0a8817574b9c8269888607db2
 // changing the opening to a question mark for get, so user input can be reflective
 // styling for index page
 // look at models after pulling
