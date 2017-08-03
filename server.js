@@ -21,6 +21,10 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // Static directory
 app.use(express.static("public"));
 
+SALT_WORK_FACTOR = 12;
+
+
+
 // Passport init
 app.use(passport.initialize());
 app.use(passport.session());
