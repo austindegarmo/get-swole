@@ -32,7 +32,8 @@ app.put("/api/workoutname", function(req, res) {
 
 
 
-
-
+// changing the opening to a question mark for get, so user input can be reflective
+// styling for index page
+// look at models after pulling
 
 }
