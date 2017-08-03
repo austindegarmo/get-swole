@@ -1,6 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
   var backExercise = sequelize.define("back_exercise", {
-    title: {
     exercise_name: {
       type: DataTypes.STRING,
       allowNull: false,
