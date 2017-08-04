@@ -2,7 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
-var Chart = require('chart,js');
+var Chart = require('chart.js');
 
 // Sets up the Express App
 // =============================================================
@@ -21,13 +21,17 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // Static directory
 app.use(express.static("public"));
 
+SALT_WORK_FACTOR = 12;
+
+
+
 // Passport init
 app.use(passport.initialize());
 app.use(passport.session());
 
 // Routes
 // =============================================================
-require("./routes/api-routes.js")(app);
+// require("./routes/api-routes.js")(app);
 require("./routes/html-routes.js")(app);
 
 // Syncing our sequelize models and then starting our Express app

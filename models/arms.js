@@ -7,7 +7,7 @@ module.exports = function(sequelize, DataTypes) {
         len: [1]
       }
     },
-    weight_1: {
+    weight: {
       type: DataTypes.INTEGER,
       allowNull: false
     },
@@ -15,19 +15,11 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER,
       isNumber: true,
       isInt: true
-    }, 
-    weight_2: {
-      type: DataTypes.INTEGER,
-      allowNull: false
     },
     set_2: {
       type: DataTypes.INTEGER,
       isNumber: true,
       isInt: true
-    },
-    weight_3: {
-      type: DataTypes.INTEGER,
-      allowNull: false
     },
     set_3:{
       type: DataTypes.INTEGER,
