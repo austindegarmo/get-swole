@@ -4,7 +4,7 @@ $(document).ready(function() {
   var exerciseList = $("tbody");
   var exerciseContainer = $(".exercise-container")
 
-  $(document).on("submit", "#exercise-form", handleExerciseSubmit);
+  $(document).on("click", "#add-btn", handleExerciseSubmit);
   $(document).on("click", ".delete-exercise", handleDeleteButtonPress);
 
   var url = window.location.search;
@@ -21,22 +21,22 @@ $(document).ready(function() {
     function handleExerciseSubmit(event) {
       event.preventDefault();
     // Wont submit the post if we are missing a body, title, or author
-      if (!$("#exercise_name").val().trim() || !$("#row_weight").val().trim() || !$("#row_set1").val() || !$("#row_set2").val() || !$("#row_set3").val()) {
+      if (!$("#exercise_name").val().trim() || !$("#row_weight").val() || !$("#row_set1").val() || !$("#row_set2").val() || !$("#row_set3").val()) {
+        console.log("hello david!");
           return;
       }
     // Constructing a newPost object to hand to the database
       var newExercise = {
-          exercise_name: $("#exercise-name")
+          exercise_name: $("#exercise_name")
             .val()
             .trim(),
-          weight: $("#row-weight")
-            .val()
-            .trim(),
-          set_1: $("#row-set1")
+          weight: $("#row_weight")
             .val(),
-          set_2: $("#row-set2")
+          set_1: $("#row_set1")
             .val(),
-          set_3: $("#row-set3")
+          set_2: $("#row_set2")
+            .val(),
+          set_3: $("#row_set3")
             .val()
         };
         console.log(newExercise);

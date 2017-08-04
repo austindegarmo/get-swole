@@ -8,27 +8,31 @@
 	<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="assets/js/Chart.js" type="text/javascript"></script>
 	<link rel="stylesheet" href="../assets/css/style.css">
 	
 </head>
 <body>	
- <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid">
         <nav class="navbar navbar-default navbar-fixed-top nav-style">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-lg-6 no-padding">
                         <div class="navbar-header teal-back side-padding">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Navbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>                        
+                            </button>
                             <h1 class="h1font" style="font-family:'Passion One', cursive; font-weight: 400px;">GET SWOLE</h1>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="./index">Home</a></li>
+                        <ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="Navbar">
+                            <li class="active"><a href="./index">Home <span class="sr-only">(current)</span></a></li>
                             <li><a id="border" href="./about">About</a></li>
                             <li><a href="./contact">Contact</a></li>
-                             <li class="active"><a href="./chart">Progress<span class="sr-only">(current)</span></a></li>
-
+                             <li><a href="./chart">Progress</a></li>
                         </ul>
                     </div>
                 </div>
