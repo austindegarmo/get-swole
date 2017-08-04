@@ -21,7 +21,7 @@ $(document).ready(function() {
     function handleExerciseSubmit(event) {
       event.preventDefault();
     // Wont submit the post if we are missing a body, title, or author
-      if (!exercise_nameInput.val().trim() || !weightInput.val().trim() || !set_1Input.val() || !set2Input.val() || !set3Input.val()) {
+      if (!$("#exercise_name").val().trim() || !$("#row_weight").val().trim() || !$("#row_set1").val() || !$("#row_set2").val() || !$("#row_set3").val()) {
           return;
       }
     // Constructing a newPost object to hand to the database
