@@ -56,7 +56,7 @@ $("#workOutModal").on('hide.bs.modal', function(){
 
 $(document).ready(function(){
 	var test = $("#dropdown").find("option:selected").prop("value");
-	console.log(test);
+	// console.log(test);
 	
 	$("#dropdown").on('change', function() {
 	  if (this.value==="arms") {

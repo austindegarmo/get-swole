@@ -13,6 +13,7 @@ module.exports = function(app) {
     db.ArmExercise.findAll({
       where: query
     }).then(function(dbPost) {
+      console.log(dbPost);
       res.json(dbPost);
     });
   });
