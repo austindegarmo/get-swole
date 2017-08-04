@@ -9,7 +9,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
-	<title>Main Page</title>
+    <title>Main Page</title>
 </head>
 <body>
     <div class="jumbotron jumbotron-fluid">
@@ -49,7 +49,7 @@
                     <option value="arms">arms</option>
                 </select>
             </div>
-            <div class="col-md-10" id="sample">
+            <div class="col-sm-6 col-md-10" id="sample">
 <!--                 <a href="#workOutModal" class="btn btn-md btn-primary" data-toggle="modal">Example 1</a> -->
             </div>
 <!--             <div class="col-md-2" id="sample2">
@@ -67,10 +67,10 @@
         </div>
     </div>
     <hr>
-	<div class="container-fluid">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-10">
-            	<table id="example" class="display" cellspacing="0" width="100%">
+                <table id="example" class="display" cellspacing="0" width="100%">
                     <thead>
                         <tr>
                             <th>Exercise</th>
@@ -85,9 +85,9 @@
                         <tr>
                             <td><input type="text" name="exercise-name"></td>
                             <td><input type="integer" id="row-weight" name="row-weight" value=""></td>
-                            <td><input type="integer" id="row-set1" name="row-set1" value="Do work"></td>
-                            <td><input type="integer" id="row-set2" name="row-set2" value="Excercise"></td>
-                            <td><input type="integer" id="row-set3" name="row-set3" value="Sweat"></td>
+                            <td><input type="integer" id="row-set1" name="row-set1" value=""></td>
+                            <td><input type="integer" id="row-set2" name="row-set2" value=""></td>
+                            <td><input type="integer" id="row-set3" name="row-set3" value=""></td>
                         </tr>
                     </tbody>
                 </table>
@@ -99,9 +99,31 @@
     </div>
     <hr>
     <div class="container-fluid">
-        <h1>Exercises done so far:</h1>
-            <div class="col-md-12 results-area">
-                
+            <div class="col-md-12">
+                <div class="exercise-container">
+                    <h1>Exercises Done So Far:</h1>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                            <th>Exercise</th>
+                            <th>Weight</th>
+                            <th>Set 1</th>
+                            <th>Set 2</th>
+                            <th>Set 3</th>
+                            <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="form-row">
+                                <form id="exercise-form">
+                                    <td colspan="4">
+                                        <input placeholder="Enter a name" id="exercise-name" type="text" />
+                                    </td>
+                                </form>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
     </div>
     <div class="navbar navbar-default navbar-fixed-bottom" id="footer">
@@ -131,5 +153,7 @@
     </div> 
     <!-- Modal HTML Start End -->
     <script type="text/javascript" src="/assets/js/modal.js"></script>
+    <!-- Custom script -->
+    <script type="text/javascript" src="/assets/js/exercise_data.js"></script>
 </body>
 </html>
