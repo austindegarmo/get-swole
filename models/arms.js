@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-  var armsExercise = sequelize.define("arms_exercise", {
+  var ArmsExercise = sequelize.define("Arms_exercise", {
     exercise_name: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -27,5 +27,19 @@ module.exports = function(sequelize, DataTypes) {
       isInt: true
     }
   });
-  return armsExercise;
+
+    ArmsExercise.associate = function(models) {
+   
+    ArmsExercise.belongsTo(models.User, {
+      foreignKey: {
+        allowNull: false
+      }
+    });
+  };
+  return ArmsExercise;
 };
+
+
+
+
+
