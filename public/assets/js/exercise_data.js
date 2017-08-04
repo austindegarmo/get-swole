@@ -45,7 +45,7 @@ $(document).ready(function() {
 
   // Submits a new post and brings user to blog page upon completion
   function submitExercise(post) {
-    $.post("/api/index", post, function() {
+    $.post("/api/exercise", post, function() {
       window.location.href = "/index";
     });
   }
