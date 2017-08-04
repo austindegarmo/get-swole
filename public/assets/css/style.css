@@ -518,3 +518,7 @@ padding-left:10px;
 margin-bottom: 20px;
 
 }
+#progress{
+  max-width: 650px;
+  background-color: white;
+}
