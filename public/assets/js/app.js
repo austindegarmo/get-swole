@@ -1,7 +1,7 @@
 
 
 $(document).ready(function(){
-var Chart = require('chart.js');
+var Chart = require('Chart.js');
 
 var chartData = {
     data: {
