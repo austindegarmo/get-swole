@@ -1,9 +1,9 @@
 {
   "development": {
     "username": "root",
-    "password": "F4rtP4rty",
+    "password": "password",
 
-    "database": "practice_getswole",
+    "database": "get_swole",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
