@@ -23,7 +23,7 @@ function drawButton(exType) {
 
 	for (var i = 0; i < trailers.length; i++) {
 			var button = $('<button>');
-			    button.addClass('col-md-2 btn btn-primary btn-lg');
+			    button.addClass('col-md-2 btn btn-primary btn-lg dynamic-button');
 			    button.attr('id','custom-modal' + i);
 			    button.attr('data-topic', trailers[i]);
 			    button.text(exercises[i]);
@@ -33,7 +33,7 @@ function drawButton(exType) {
 
 /* Modal Box for exercise trailer Starts --*/
 
-$(document).on("click",".btn-primary", function() {
+$(document).on("click",".dynamic-button", function() {
 
   //get youtube exercise link
   var url = $(this).attr("data-topic");
